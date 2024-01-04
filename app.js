@@ -13,6 +13,6 @@ app.use(userRouter);
 
 // Inicio del servidor
 sequelize.sync({ alter: true }).then(() => {
-  console.log("DB connect");
-  app.listen(3000, () => console.log("Server on PORT 3000"));
+  console.log(" → DB connect");
+  app.listen(3000, () => console.log(" → Server on PORT 3000"));
 });
